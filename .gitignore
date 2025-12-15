@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# FastAPI / Uvicorn
+*.log
+
+# Vector stores (FAISS)
+backend/vector_stores/
+vector_stores/
+
+# OS files
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Node (if frontend exists)
+node_modules/
+dist/
+build/

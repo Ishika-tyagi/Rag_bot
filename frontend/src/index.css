@@ -1,0 +1,50 @@
+/* frontend/src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* frontend/src/index.css */
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --bg-color: #121212;
+  --primary-color: #8a4fff;
+  --secondary-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --text-color-secondary: #a0a0a0;
+  --border-color: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: linear-gradient(135deg, #1a1225, #121212, #151a25);
+  background-size: 400% 400%;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+/* Pre-React Load Spinner */
+.initial-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--border-color);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

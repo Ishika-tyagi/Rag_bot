@@ -1,0 +1,13 @@
+# backend/requirements.txt
+
+# backend/requirements.txt
+
+fastapi
+uvicorn[standard]
+python-dotenv
+langchain
+langchain-anthropic    # For Claude
+langchain-cohere       # For Cohere Embeddings
+pypdf
+faiss-cpu
+python-multipart
